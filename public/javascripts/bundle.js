@@ -98,7 +98,6 @@ __webpack_require__.r(__webpack_exports__);
 var card = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.card');
 var ta = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ta');
 var ct = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ct');
-var iun = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#iun');
 var gacha5 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha5');
 var gacha6 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha6');
 var gacha8 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha8');
@@ -179,7 +178,6 @@ function gachaAnimation() {
 function addCard(a) {
   card.addClass(a);
   ta.addClass(a);
-  iun.addClass(a);
   ct.attr('value', a);
 }
 

@@ -108,6 +108,15 @@ header h2 {
 	border-radius: 30px;
 }
 
+.card2 {
+  margin: 30px auto 0;
+  padding: 5px 30px;
+	overflow: hidden;
+	max-width: 1000px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	border-radius: 30px;
+}
+
 .borders {
 	margin-top: 30px;
 	padding: 2px 2px 2px 8px;
@@ -322,17 +331,17 @@ header h2 {
 /*--ガチャから出るカードのスタイル--*/
 /*--mythic--*/
 .M1 {
-	color: #0d0116;
+	color: #7f44af;
 	font-size: 20px;
 	font-weight: bold;
-	background-image: url(../images/gold.png);
+	background-image: url(../images/gatsby.jpg);
 }
 
 .M2 {
-	color: #0d0116;
+	color: #e9a932;
 	font-size: 20px;
 	font-weight: bold;
-	background-image: url(../images/gold.png);
+	background-image: url(../images/abstrakt-tile.jpg);
 }
 
 /*--legend--*/

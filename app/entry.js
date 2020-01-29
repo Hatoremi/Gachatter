@@ -4,7 +4,6 @@ import $ from 'jquery';
 const card = $('.card');
 const ta = $('#ta');
 const ct = $('#ct');
-const iun = $('#iun');
 const gacha5 = $('#gacha5');
 const gacha6 = $('#gacha6');
 const gacha8 = $('#gacha8');
@@ -73,7 +72,6 @@ function gachaAnimation() {
 function addCard(a) {
   card.addClass(a);
   ta.addClass(a);
-  iun.addClass(a);
   ct.attr('value',a);
 }
 

@@ -33,7 +33,6 @@ passport.use(new GitHubStrategy({
 ));
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var gachaRouter = require('./routes/gacha');
 
 var app = express();
@@ -56,7 +55,6 @@ app.use(passport.session());
 app.use(favicon(path.join(__dirname, 'public','images','favicon.ico')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/gacha', gachaRouter);
 
 app.get('/auth/github',
