@@ -1,13 +1,19 @@
 var express = require('express');
 var router = express.Router();
 const Post = require('../post');
+const csrf = require('csurf');
+const csrfProtection = csrf({ cookie: true });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('gacha', { title: 'ガチャガチャ', user: req.user });
+router.get('/', csrfProtection, (req, res, next) => {
+  res.render('gacha', {
+    title: 'ガチャガチャ',
+    user: req.user,
+    csrfToken: req.csrfToken()
+    });
 });
 
-router.post('/', (req, res, next) => {
+router.post('/', csrfProtection, (req, res, next) => {
   let content = req.body.content;
   if (!content) {
     res.redirect('/gacha');

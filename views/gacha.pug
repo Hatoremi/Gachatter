@@ -49,6 +49,7 @@ block content
       div#gacha7 　★ガチャッター★<br>ガチャを回してさまざまな投稿装飾を手に入れよう！
       div#gacha8
     form(method="post" action="/gacha").card
+      input(type="hidden" name="_csrf" value!=csrfToken)
       if user
         div #{user.username}
         input(name="username" type="hidden" value=`${user.username}`)

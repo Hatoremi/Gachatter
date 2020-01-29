@@ -25,10 +25,11 @@ block content
     each post in posts
       div(class=`${post.cardstyle}`)#dc.card
         p #{post.id}:[#{post.username}]#{post.createdAt}
-        p #{post.content}
+        p(style="white-space:pre; overflow:auto;") #{post.content}
         if user
           - var isDeletable = (user.username === post.username || user.username === 'Hatoremi')
           if isDeletable
             form(action="/", method="post")
+              input(type="hidden" name="_csrf" value!=csrfToken)
               input(type="hidden" name="id" value=`${post.id}`)
               button#db(type="submit") 削除

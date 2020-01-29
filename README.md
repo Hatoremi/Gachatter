@@ -1,2 +1,2 @@
-# Gachatter
-Bulletin board site with "gacha" elements.
+# ガチャッター/Gachatter
+ガチャ機能の付いた掲示板サイトです。
