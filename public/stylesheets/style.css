@@ -1,0 +1,480 @@
+body {
+  margin: 20px;
+  padding: 0px;
+  color: #000;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	background: rgba(218, 185, 77, 0.5);
+}
+
+header ul {list-style-type: none;}
+
+table {
+	border:solid 1px black;
+}
+
+td {
+	border-bottom: solid 1px rgb(218, 165, 77);
+}
+
+small {
+	float: right;
+}
+
+a {
+  color: #000;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: rgb(136, 43, 0);
+}
+
+#container {
+  margin: 30px auto 0;
+  padding: 40px;
+	overflow: hidden;
+	max-width: 1200px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	border-radius: 30px;
+	background: #f4f5f7;
+}
+
+header {
+	overflow: hidden;z-index: 1;
+  position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 0 0;
+	background: rgba(218, 185, 77, 0.8);
+	border-bottom: 1px solid rgb(122, 112, 77);
+}
+
+header h2 {
+  margin: 4px;
+  font-size: 2em;
+  width: 200px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+
+#menubar {
+	overflow: hidden;
+	float: left;
+	width: auto;
+}
+
+#menubar li {
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+#menubar li a {
+  display: block;
+  text-decoration: none;
+	padding: 0 10px;
+}
+
+#menubar li.current a {
+	color: rgb(136, 43, 0);
+}
+
+#menubar-right {
+  float: right;
+	margin-right: 10px;
+}
+
+#menubar-right li {
+  display: inline;
+}
+
+#login-button {
+  padding: 0 10px;
+}
+
+#menubar-right img {
+  width: 20px;
+	margin-left: 5px;
+}
+
+.card {
+  margin: 30px auto 0;
+  padding: 40px;
+	overflow: hidden;
+	max-width: 1000px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	border-radius: 30px;
+}
+
+.borders {
+	margin-top: 30px;
+	padding: 2px 2px 2px 8px;
+	border-bottom: solid 2px rgb(218, 185, 77);
+	border-left: solid 5px rgb(218, 185, 77);
+}
+
+#ta {
+	width: 100%;
+	height: 50%;
+	border-radius: 3px;
+}
+
+#sb {
+	float: right;
+	padding: 2px 12px;
+	border-radius: 10px;
+	background-color: rgba(201, 200, 200, 0.6);
+}
+
+#db {
+	float: right;
+	padding: 1px 9px;
+	border-radius: 10px;
+	border: none;
+	background-color: #dc3546b0;
+}
+
+#db:hover {
+	background-color: #dc3545;
+}
+
+/*--ガチャのパーツ--*/
+#gacha {
+	position: relative;
+}
+
+.gacha1 {
+	margin: auto;
+	padding: 5px;
+	width: 180px;
+	height: 300px;
+	background-color: crimson;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(68, 0, 0, 0.4);
+}
+
+#gacha2 {
+	margin-top: 7px;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 172px;
+	height: 133px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 45px;
+}
+
+#gacha3 {
+	position: absolute;
+	margin-left: 130px;
+	margin-top: 30px;
+	width: 40px;
+	height: 75px;
+	background: linear-gradient(to right,rgb(218, 185, 77), rgb(188, 155, 47)41%,rgb(188, 155, 47)59%,rgb(218, 185, 77));
+	border-radius: 10px;
+}
+
+#gacha4 {
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 59px;
+	width: 10px;
+	height: 12px;
+	background: linear-gradient(to bottom, gray,rgb(99, 99, 99)99%);
+	border-radius: 2px;
+}
+
+#gacha5 {
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 41px;
+	width: 10px;
+	height: 20px;
+	background-color: gray;
+	border-radius: 2px;
+}
+
+#gacha6 {
+	position: absolute;
+	margin-left: 138px;
+	margin-top: 20px;
+	width: 24px;
+	height: 24px;
+	background-color: rgb(119, 38, 0);
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px rgba(119,38,0,0.2);
+}
+
+#gacha6:hover {
+	background-color: rgb(139, 58, 20);
+}
+
+#gacha7 {
+	position: absolute;
+	margin-left: 13px;
+	margin-top: 28px;
+	padding: 5px;
+	width: 94px;
+	height: 64px;
+	background-color: rgb(199, 199, 199);
+	border-radius: 3px;
+	border:inset 1px rgb(48, 26, 26);
+	font-size: 3px;
+}
+
+#gacha8 {
+	margin-top: 122px;
+	margin-left: 15px;
+	width: 150px;
+	height: 30px;
+	background-color: rgba(102, 102, 102, 0.9);
+	border-radius: 10px;
+	text-align: center;
+	font-size: 22px;
+	padding-top: 3px;
+}
+
+/*--ガチャのボール--*/
+#gacha-ball {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color:rgba(172, 172, 172, 0.5);
+}
+
+#gacha-ball-cap {
+	margin-top: 20px;
+	width: 40px;
+	height: 20px;
+	border-radius: 0px 0px 17px 17px;
+}
+
+.r30 {
+	transform: rotate(30deg);
+}
+
+.r60 {
+	transform: rotate(60deg);
+}
+
+.r120 {
+	transform: rotate(120deg);
+}
+
+.r-30 {
+	transform: rotate(-30deg);
+}
+
+.r-120 {
+	transform: rotate(-120deg);
+}
+
+.gb1 {
+	margin-top: 86px;
+	margin-left: 11px;
+}
+
+.gb2 {
+	margin-top: 85px;
+	margin-left: 122px;
+}
+
+.gb3 {
+	margin-top: 87px;
+	margin-left: 94px;
+}
+
+.gb4 {
+	margin-top: 93px;
+	margin-left: 64px;
+}
+
+.gb5 {
+	margin-top: 70px;
+	margin-left: 43px;
+}
+
+.gb6 {
+	margin-top: 49px;
+	margin-left: 78px;
+}
+
+.gb7 {
+	margin-top: 47px;
+	margin-left: 131px;
+}
+
+.gb8 {
+	margin-top: 53px;
+	margin-left: 1px;
+}
+
+.gb9 {
+	margin-top: 32px;
+	margin-left: 35px;
+}
+
+/*--ガチャから出るカードのスタイル--*/
+/*--mythic--*/
+.M1 {
+	color: #0d0116;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url(../images/gold.png);
+}
+
+.M2 {
+	color: #0d0116;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url(../images/gold.png);
+}
+
+/*--legend--*/
+.L1 {
+	background-color: gold;
+}
+
+.L2 {
+	background-color: silver;
+}
+
+/*--epic--*/
+.E1 {
+	background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
+
+.E2 {
+	background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+
+/*--rare--*/
+.R1 {
+	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+.R2 {
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.R3 {
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.R4 {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.R5 {
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.R6 {
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.R7 {
+	background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+
+.R8 {
+	background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.R9 {
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	color: whitesmoke;
+}
+
+/*--uncommon--*/
+.U1 {
+	background-color: #cca9ca;
+}
+
+.U2 {
+	background-color: #9bcad0;
+}
+
+.U3 {
+	background-color: #dd9dbf;
+}
+
+.U4 {
+	background-color: #edef9c;
+}
+
+.U5 {
+	background-color: #aabade;
+}
+
+.U6 {
+	background-color: #f2dae8;
+}
+
+.U7 {
+	background-color: #c7ddae;
+}
+
+.U8 {
+	background-color: #a199c8;
+}
+
+.U9 {
+	background-color: #faede5;
+}
+
+.U10 {
+	background-color: #d5a87f;
+}
+
+.U11 {
+	background-color: #f7f06e;
+}
+
+.U12 {
+	background-color: #95bfe7;
+}
+
+/*--common--*/
+.C1 {
+	background-color: #ff0000;
+}
+
+.C2 {
+	background-color: #00ff00;
+}
+
+.C3 {
+	background-color: #0000ff;
+}
+
+.C4 {
+	background-color: #ffff00;
+}
+
+.C5 {
+	background-color: #00ffff;
+}
+
+.C6 {
+	background-color: #ff00ff;
+}
+
+.C7 {
+	background-color: #ffffff;
+}
+
+.C8 {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/*--その他のカードスタイル--*/
+.N {
+	background: #f4f5f7;
+}

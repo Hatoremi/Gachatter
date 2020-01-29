@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  header
+    h2 ガチャッター
+    nav#menubar
+      ul
+        li.current
+          a(href="/") ホーム
+        li
+          a(href="/gacha") ガチャる!
+        li
+          a(href="/help") その他
+    ul#menubar-right
+      li#login-button
+        if user
+          a(href="/logout") ログアウト
+        else
+          a(href="/login") GitHubでログイン
+      li
+        a(href="https://github.com/Hatoremi/Gachatter" title="githubへのリンク")
+          img(src="images/icon_github.png")
+  div#container
+    h2 投稿一覧
+    each post in posts
+      div(class=`${post.cardstyle}`)#dc.card
+        p #{post.id}:[#{post.username}]#{post.createdAt}
+        p #{post.content}
+        if user
+          - var isDeletable = (user.username === post.username || user.username === 'Hatoremi')
+          if isDeletable
+            form(action="/", method="post")
+              input(type="hidden" name="id" value=`${post.id}`)
+              button#db(type="submit") 削除

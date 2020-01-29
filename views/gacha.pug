@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  header
+    h2 ガチャッター
+    nav#menubar
+      ul
+        li
+          a(href="/") ホーム
+        li.current
+          a(href="/gacha") ガチャる!
+        li
+          a(href="/help") その他
+    ul#menubar-right
+      li#login-button
+        if user
+          a(href="/logout") ログアウト
+        else
+          a(href="/login") GitHubでログイン
+      li
+        a(href="https://github.com/Hatoremi/Gachatter" title="githubへのリンク")
+          img(src="images/icon_github.png")
+  div#container
+    h1 新規投稿ガチャページ
+    div#gacha.gacha1
+      div#gacha2
+        div#gacha-ball.gb1.r-30
+          div#gacha-ball-cap.C2
+        div#gacha-ball.gb2.r30
+          div#gacha-ball-cap.C4
+        div#gacha-ball.gb3.r120
+          div#gacha-ball-cap.C5
+        div#gacha-ball.gb4
+          div#gacha-ball-cap.C6
+        div#gacha-ball.gb5.r-120
+          div#gacha-ball-cap.C1
+        div#gacha-ball.gb6.r30
+          div#gacha-ball-cap.R9
+        div#gacha-ball.gb7.r-30
+          div#gacha-ball-cap.R5
+        div#gacha-ball.gb8.r60
+          div#gacha-ball-cap.R2
+        div#gacha-ball.gb9.r-30
+          div#gacha-ball-cap.R3
+      div#gacha3
+      div#gacha4
+      div#gacha5
+      button#gacha6
+      div#gacha7 　★ガチャッター★<br>ガチャを回してさまざまな投稿装飾を手に入れよう！
+      div#gacha8
+    form(method="post" action="/gacha").card
+      if user
+        div #{user.username}
+        input(name="username" type="hidden" value=`${user.username}`)
+      else
+        div guest
+      input#ct(name="cardstyle" type="hidden" value="")
+      textarea#ta(name="content" rows="5" maxlength="10")
+      br
+      button#sb(type="submit") 投稿
+    br
+    small ※注意 guestで投稿すると投稿を削除することができません

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  header
+    h2 ガチャッター
+    nav#menubar
+      ul
+        li
+          a(href="/") ホーム
+        li
+          a(href="/gacha") ガチャる!
+        li
+          a(href="/help") その他
+    ul#menubar-right
+      li#login-button
+        if user
+          a(href="/logout") ログアウト
+        else
+          a(href="/login") GitHubでログイン
+      li
+        a(href="https://github.com/Hatoremi/Gachatter" title="githubへのリンク")
+          img(src="images/icon_github.png")
+  div#container
+    br
+    a(href="/auth/github" title="GitHubでログイン！") Login with GitHub
+    br
+    h3 GitHubでログインすることで以下の機能が使えるようになります
+    ul
+      li 投稿に名前(GitHubのユーザーネーム)が付きます
+      li 投稿を削除することができます
