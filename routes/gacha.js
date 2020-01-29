@@ -10,7 +10,7 @@ router.get('/', csrfProtection, (req, res, next) => {
     title: 'ガチャガチャ',
     user: req.user,
     csrfToken: req.csrfToken()
-    });
+  });
 });
 
 router.post('/', csrfProtection, (req, res, next) => {

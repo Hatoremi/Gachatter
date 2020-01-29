@@ -3,16 +3,20 @@ var router = express.Router();
 const Post = require('../post');
 const csrf = require('csurf');
 const csrfProtection = csrf({ cookie: true });
+const moment = require('moment-timezone');
 
 /* GET home page. */
 router.get('/', csrfProtection, (req, res, next) => {
   Post.findAll({order:[['id', 'DESC']]}).then((posts) => {
+    posts.forEach((post) => {
+      post.formattedCreatedAt = moment(post.createdAt).tz('Asia/Tokyo').format('YYYY/MM/DD HH:mm:ss');
+    });
     res.render('index', {
       title: 'ガチャッター',
       user: req.user,
       posts: posts,
       csrfToken: req.csrfToken()
-      });
+    });
   });
 });
 

@@ -24,7 +24,7 @@ block content
     h2 投稿一覧
     each post in posts
       div(class=`${post.cardstyle}`)#dc.card
-        p #{post.id}:[#{post.username}]#{post.createdAt}
+        p #{post.id}:[#{post.username}]#{post.formattedCreatedAt}
         p(style="white-space:pre; overflow:auto;") #{post.content}
         if user
           - var isDeletable = (user.username === post.username || user.username === 'Hatoremi')
