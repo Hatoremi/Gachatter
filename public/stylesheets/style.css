@@ -3,7 +3,6 @@ body {
   padding: 0px;
   color: #000;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 	background: rgba(218, 185, 77, 0.5);
 }
 
@@ -346,29 +345,64 @@ header h2 {
 
 /*--legend--*/
 .L1 {
-	background-color: gold;
+	background:
+	repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+		rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+		rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+		rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+		rgba(255, 0, 0, 0.5) 300px),
+	repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px,
+		rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+		rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+		rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+		rgba(255, 0, 0, 0.5) 230px),
+	repeating-linear-gradient(23deg, red 50px, orange 100px,
+		yellow 150px, green 200px, blue 250px,
+		indigo 300px, violet 350px, red 370px);
 }
 
 .L2 {
-	background-color: silver;
+	background:
+	repeating-linear-gradient(0deg, #f4f5f7, #f4f5f7 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 30px),
+	repeating-linear-gradient(90deg, #f4f5f7, #f4f5f7 3px, rgb(0, 0, 0) 3px, rgb(0, 0, 0) 30px);
+	color: #f4f5f7;
 }
 
 /*--epic--*/
 .E1 {
 	background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+	font-family: 'HG行書体';
 }
 
 .E2 {
 	background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+	font-family: 'SimSun';
+}
+
+.E3 {
+	background:
+	linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+	linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+	linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.E4 {
+	background: conic-gradient(from 45deg, red, orange, yellow, green, blue, purple ,red);
+}
+
+.E5 {
+	background: radial-gradient(#3d3d3d 10px, #202020 50%, #0e0e0e 100%);
+	color: #afafaf;
+	font-family: monospace;
 }
 
 /*--rare--*/
 .R1 {
-	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+	background-image: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%);
 }
 
 .R2 {
-	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .R3 {
@@ -384,19 +418,19 @@ header h2 {
 }
 
 .R6 {
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background-image: linear-gradient(120deg, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .R7 {
-	background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+	background-image: linear-gradient(120deg, #d9afd9 0%, #97d9e1 100%);
 }
 
 .R8 {
-	background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+	background-image: linear-gradient(120deg, #abecd6 0%, #fbed96 100%);
 }
 
 .R9 {
-	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	background-image: linear-gradient(120deg, #434343 0%, black 100%);
 	color: whitesmoke;
 }
 

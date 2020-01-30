@@ -102,8 +102,10 @@ var gacha5 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha5');
 var gacha6 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha6');
 var gacha8 = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha8');
 var db = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#db');
+var gacha = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#gacha');
 gacha6.click(function () {
   gachaAnimation();
+  gachaBoxAnimation();
   card.removeClass().addClass('card');
   ta.removeClass();
   var rarity = getRandomInt(1, 1000);
@@ -175,6 +177,22 @@ function gachaAnimation() {
   }, 1000);
 }
 
+function gachaBoxAnimation() {
+  gacha.animate({
+    'left': '+=3px'
+  }, 100).animate({
+    'top': '-=1px'
+  }, 100);
+  gacha.animate({
+    'left': '-=6px'
+  }, 200);
+  gacha.animate({
+    'left': '+=3px'
+  }, 100).animate({
+    'top': '+=1px'
+  }, 100);
+}
+
 function addCard(a) {
   card.addClass(a);
   ta.addClass(a);
@@ -214,7 +232,7 @@ function gachaL() {
 }
 
 function gachaE() {
-  var cr = getRandomInt(1, 2);
+  var cr = getRandomInt(1, 5);
 
   switch (cr) {
     case 1:
@@ -223,6 +241,18 @@ function gachaE() {
 
     case 2:
       addCard('E2');
+      break;
+
+    case 3:
+      addCard('E3');
+      break;
+
+    case 4:
+      addCard('E4');
+      break;
+
+    case 5:
+      addCard('E5');
       break;
   }
 

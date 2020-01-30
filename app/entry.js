@@ -8,9 +8,11 @@ const gacha5 = $('#gacha5');
 const gacha6 = $('#gacha6');
 const gacha8 = $('#gacha8');
 const db = $('#db');
+const gacha = $('#gacha');
 
 gacha6.click(() => {
   gachaAnimation();
+  gachaBoxAnimation();
   card.removeClass().addClass('card');
   ta.removeClass();
   const rarity = getRandomInt(1,1000);
@@ -69,6 +71,12 @@ function gachaAnimation() {
   gacha5.animate({ marginTop: '41px' },1000);
 }
 
+function gachaBoxAnimation() {
+  gacha.animate({'left': '+=3px'}, 100).animate({'top': '-=1px'}, 100);
+  gacha.animate({'left': '-=6px'}, 200);
+  gacha.animate({'left': '+=3px'}, 100).animate({'top': '+=1px'}, 100);
+}
+
 function addCard(a) {
   card.addClass(a);
   ta.addClass(a);
@@ -100,13 +108,22 @@ function gachaL() {
 }
 
 function gachaE() {
-  let cr = getRandomInt(1,2);
+  let cr = getRandomInt(1,5);
   switch (cr) {
     case 1:
       addCard('E1');
     break;
     case 2:
       addCard('E2');
+    break;
+    case 3:
+      addCard('E3');
+    break;
+    case 4:
+      addCard('E4');
+    break;
+    case 5:
+      addCard('E5');
     break;
   };
 }

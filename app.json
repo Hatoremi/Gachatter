@@ -1,0 +1,7 @@
+{
+  "name": "Gachatter",
+  "description": "Gachatter",
+  "logo": "",
+  "keywords": ["node"],
+  "image": "heroku/nodejs"
+}
