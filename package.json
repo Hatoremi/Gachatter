@@ -21,7 +21,7 @@
     "pg": "7.4.1",
     "pg-hstore": "2.3.2",
     "pug": "2.0.0-beta11",
-    "sequelize": "4.44.3",
+    "sequelize": "6.3.5",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
